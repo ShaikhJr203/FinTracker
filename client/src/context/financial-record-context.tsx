@@ -35,7 +35,7 @@ export const FinancialRecordProvider = ({
     const fetchRecords = async () =>{
         if(!user) return;
         const response = await fetch(
-           `http://localhost:3001/financial-records/getAllByUserID/${user?.id}`
+           `https://fintracker-1-651i.onrender.com/financial-records/getAllByUserID/${user?.id}`
         );
 
         if(response.ok){
